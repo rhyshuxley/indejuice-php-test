@@ -19,5 +19,6 @@
     
     
     function containsWord($word, $sentence){
+        // check if full word is in sentence
         return preg_match('/\b'.preg_quote($word, '/').'\b/i',$sentence) !== 0;
     }

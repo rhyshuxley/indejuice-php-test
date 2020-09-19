@@ -56,6 +56,7 @@
          * @param integer $count
          */
         function __construct($count = 0){
+            // give count starting value
             $this->count = $count;
         }
 
@@ -66,6 +67,7 @@
          * @return void
          */
         public function count($n = 1){
+            // add specified value to count
             $this->count = $this->count + $n;
         }
 
@@ -75,6 +77,7 @@
          * @return void
          */
         public function get(){
+            // return count
             return $this->count;
         }
 
@@ -84,6 +87,7 @@
          * @return void
          */
         public function reset(){
+            // reset count to 0
             $this->count = 0;
         }
     }
