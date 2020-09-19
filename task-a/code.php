@@ -18,8 +18,6 @@
      */
     
     
-    function containsWord(){
-        
-
-
+    function containsWord($word, $sentence){
+        return preg_match('/\b'.preg_quote($word, '/').'\b/i',$sentence) !== 0;
     }

@@ -43,7 +43,47 @@
 
     
     class Counter {
-        
-        
+        /**
+         * Count
+         *
+         * @var integer
+         */
+        private $count = 0;
 
+        /**
+         * constructor
+         *
+         * @param integer $count
+         */
+        function __construct($count = 0){
+            $this->count = $count;
+        }
+
+        /**
+         * increment count by n
+         *
+         * @param integer $n
+         * @return void
+         */
+        public function count($n = 1){
+            $this->count = $this->count + $n;
+        }
+
+        /**
+         * get current count value
+         *
+         * @return void
+         */
+        public function get(){
+            return $this->count;
+        }
+
+        /**
+         * reset count to 0
+         *
+         * @return void
+         */
+        public function reset(){
+            $this->count = 0;
+        }
     }
